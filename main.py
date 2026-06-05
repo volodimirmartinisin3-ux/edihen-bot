@@ -3,8 +3,8 @@ from groq import Groq
 import os
 
 
-TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
-GROQ_KEY = os.getenv("GROQ_KEY")
+TELEGRAM_TOKEN = ("TELEGRAM_TOKEN")
+GROQ_KEY = ("GROQ_KEY")
 
 bot = telebot.TeleBot(TELEGRAM_TOKEN)
 client = Groq(api_key=GROQ_KEY)
